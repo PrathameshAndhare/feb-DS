@@ -1,0 +1,86 @@
+# int --->
+print(10,20,30)
+print('hello')
+print(10+20)
+print('10+20')
+
+# float (decimal)
+print(type(1.23))
+
+#string --->
+print(type('apple'))
+print(type('123'))
+#boolean -->
+print(True)
+print(False)
+# single line comment --->
+# print('Good day')
+
+'''
+multi line comments --->
+hello
+happy 
+apple 
+'''
+
+x=20
+print(x)
+'''
+valid -->
+a-z
+A-Z
+_ a1 aa2 sky456 
+
+invalid--->
+, @ % + - / * ^ ! () [ ] } { > < .?# $
+
+'''
+print('---------------')
+
+
+print(10+20)
+print(10-20)
+print(10*20)
+print(100/20)
+print(10**4) # 10*10
+print(14%3)
+
+
+x=10
+print(x)
+x=20
+x='apple' 
+print(x+'day') # it will not modify value of x , it will simple print the output 
+print(x)
+
+a=10
+b=20
+c=30
+print(a)
+print(b)
+print(c)
+
+print(a,b,c)
+a=100
+print(a+b+c)
+
+aa=10
+bb=10
+cc=10
+print(aa,bb,cc)
+bb=20
+# id()
+print(id(aa),id(bb),id(cc))
+
+
+
+
+
+
+
+
+
+
+
+
+
