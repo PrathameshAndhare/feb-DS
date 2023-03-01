@@ -1,0 +1,83 @@
+# '' "123"
+print("12+34")
+print(type("1234"))
+
+a='qwer'
+print(type(a))
+
+print('happy day ')
+print("happy day ")
+print('''happy day ''')
+
+
+# It's a good day today 
+
+print("It's a good day today ")
+
+# string methods --->
+
+#1. format ()
+
+
+name='Rohit'
+age=19
+area='Pune'
+print(name,age,area)
+
+
+print('My name is :',name," and I am ",age,"years old",'I live in ',area)
+print('My name is {0} and I am {1} years old and I live in {2}.'.format(name,age,area))
+
+print('My name is {0} and I am {1} years old and I live in {2}.'.format('soham',20,'goa'))
+
+
+
+print('My name is {0} and I am {1} years old and I live in {2}.'.format(area,name,age))
+#.    0.   1.   2 
+
+
+a=20
+print(20)
+a=30
+
+#  0123456
+s='rainbow'
+'''
+w 6 ,-1 
+o 5 ,-2
+b 4, -3
+n 3 -4
+i 2 -5
+a 1 -6
+r 0 -7
+'''
+print('------------')
+print(s[0],s[-7])
+print(s[4],s[-3])
+print('------------')
+
+print(s[6])
+
+print(s[-1])
+print('------------')
+print(s[7])
+print(s[9])
+
+# last index = length -1
+# type(), len()
+
+
+print(len('word'))
+
+print(s[len(s)-1])
+
+
+
+
+
+
+
+
+
+
+
