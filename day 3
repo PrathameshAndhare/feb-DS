@@ -1,0 +1,56 @@
+# format 
+print('Today is {} and current month is {} and current year is {}.'.format('Thursday','march',2023))
+
+color ='blue'
+day = 'Thursday'
+time = '6 pm '
+
+a='My favourite color is {1} , today is {2}  and time is {0} .'.format(time,color,day)
+print(a)
+
+
+#. 0123456
+a='rainbow' # len() 
+#.-7654321
+
+
+
+print(a[5])
+print(a[-2])
+
+# it will include last index 
+# a[start,index]
+# start < end
+print(a[0:4])
+print(a[1:9])
+print(a[-9:3])
+print(a[:])
+
+
+
+# a[start:index:jump]
+#  012345678
+b='phenomena'
+#- 987654321
+print(b[0:7:2])
+print(b[0:7:3])
+print(b[0:7:1])
+
+
+print(b[:8])
+print(b[-2:])
+
+# reverse __>
+# start > end
+print(b[7:0:-1])
+print(b[7:0:-2])
+print(b[7:0])
+
+
+# start == end 
+print(b[3:3])
+
+
+
+
+
