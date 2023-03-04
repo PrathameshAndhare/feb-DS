@@ -1,0 +1,67 @@
+
+
+# slicing --->
+#. 0123456789.      17
+s='Today is saturday.'
+#.-18
+print(len(s))
+print(s[15],s[6],s[3])
+
+print(s[1:7])
+print(s[11:7])
+print(s[1:29])
+print('-----')
+print(s[:])
+print(s[:8])
+print(s[-6:])
+print(s[-18:5])
+print(s[-15:5])
+print('-----')
+print(s[1:7:2])
+print(s[1:17:3])
+#start<end
+print(s[4:4])
+
+# start >end , jump =-ve
+print(s[9:3:-2])
+print('-----')
+print(s[9:3])
+
+print(s[15::-2])
+
+print(s[-2:-17:-1])
+
+
+
+# lower ()--->
+
+a='ATMospHeRe'
+print(a.lower())
+print(a)
+print('-----')
+a='wYRR%Refdr'
+print(a)
+print(a.lower())
+print(a)
+
+# title--->
+
+b='SuH'
+print(b)
+print(b.title())
+print(b)
+
+
+# casefold == lower
+d='RAIn'
+print(d.casefold())
+
+
+
+
+
+
+
+
+
+
