@@ -1,0 +1,97 @@
+
+a="@today IS tueS@@DAy IS"
+print(a.lower())
+print(a.casefold())
+print(a.upper())
+print(a.title())
+print(a.find('Id'))
+print(a.index('y'))
+print(a.split('D'))
+print(a.strip(''))
+print(a.count('@'))
+print(a.replace('IS','is'))
+
+
+#  0.      1.        2.      3.      4.     5
+a=['Blue','orange','red','pink','yellow','white']
+#.   -6.     -5.     -4.     -3.    -2.    -1
+
+print(a[-3])
+print(a[len(a)-1])
+print(type(a))
+
+print(a[1:4])
+print(a[:4])
+print(a[2:])
+print(a[-10:10])
+
+print(a[-2:-6:-1])
+print(a[-2:-6:-3])
+print(len(a))
+
+
+string1='rainbow'
+l=list(string1)
+print(type(l),l)
+print(l[0])
+
+
+# type conversion --->
+q=12.99999
+print(type(q))
+print(int(q))
+
+w=12
+print(float(w))
+print(type(w))
+e=str(w)
+print(type(e))
+
+#  0.      1.        2.      3.      4.     5
+a=['Blue','orange','red','pink','yellow','white','orange']
+#.  -6.     -5.     -4.     -3.    -2.    -1
+
+# 1. count 
+print(a.count('orange'),a.count('purple'))
+'''
+# append()
+print(a)
+a.append('brown')
+a.append('Black')
+print(a)
+'''
+print(a)
+
+
+# insert()
+#['Blue', 'orange', 'grey', 'green', 'red', 'pink', 'yellow', 'white', 'orange']
+a.insert(2,'grey')
+a.insert(-5,'green')
+print(a)
+
+# 3 extend 
+
+y=[1,2,3]
+z=[5,6,7,8]
+
+y.extend(z)
+print(y,z)
+a=[1,2,3]
+b=[0,5,4]
+b.extend(a)
+print(a,b)
+
+q=[2,3,4]
+q[2]=12
+print(q)
+
+
+
+
+
+
+
+
+
+
+
