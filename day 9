@@ -1,0 +1,120 @@
+# > < == != >= <=
+
+a=20
+b=30
+c=10
+print(a>b)
+print(b==a+c)
+
+age=18
+print(age>19)
+print(age>=19)
+
+print(a!=b)
+print(a==b)
+
+
+# logical operators ---> 
+# AND ,OR, NOT 
+
+# AND -->
+
+'''
+t AND t --> true
+t AND f ---> false 
+f AND t ---> false 
+f and f --> false 
+
+'''
+
+print(1<3 and 2>0)
+print(1<3 and 2==0)
+print(1+3==5 and 2!=0)
+print(1+3==5 and 2>3)
+
+
+print('----------')
+
+# OR 
+'''
+t AND t --> true
+t AND f ---> true 
+f AND t ---> true 
+f and f --> false 
+
+'''
+print(1<3 or 2>0)
+print(1<3 or 2==0)
+print(1+3==5 or 2!=0)
+print(1+3==5 or 2>3)
+
+
+marks=20
+color='blue'
+
+print(marks>10 and color=='red')
+
+# NOT 
+
+'''
+not true --> false 
+not false --> true 
+
+'''
+
+print(not(2>3))
+
+print(not('a'!='A'))
+
+
+a=['red','blue','green','brown']
+
+print('red' not in a)
+
+print('white' not in a)
+
+print(bool('1'))
+print(bool(-1))
+print(bool(0))
+print(bool(None))
+print(bool(''))
+
+
+# conditional statements --->
+
+# if() elif() else
+'''
+color='blue'
+
+if('blue):
+elif('red)
+elif('green):
+elif('white')
+else 
+
+'''
+
+
+
+color='green'
+
+if(color=='blue'):
+    print('The color is blue')
+elif(color=='red'):
+    print('The color is red')
+elif(color=='white'):
+    print('The color is white ')
+else:
+    print('no color matches')
+
+
+print('Done')
+
+
+
+
+
+
+
+
+
