@@ -1,0 +1,79 @@
+'''
+python core 
+python advance 
+numpy 
+panda 
+sql 
+power bI / Tablue 
+excel 
+'''
+'''
+num=int(input('Enter a number'))#12
+
+if(num>0):
+    print('Number is positive')
+elif(num<0):
+    print('Number is negative')
+else:
+    print('Number is zero')
+  
+  
+print('Done')  
+'''
+
+'''
+num=int(input('Enter a number'))
+
+if(num%2==0):
+    print('Number is even ')
+else:
+    print('Number is odd ')
+    
+'''
+ 
+#marks=int(input('Enter marks')) #78
+
+''' 
+if(marks>90 and marks<=100):
+    if(marks>95):
+        print('A+')
+    else:
+        print('A')
+elif(marks>80 and marks<=90):
+    print('Grade B')
+elif(marks>70 and marks<=80):
+    print('Grade C')
+elif(marks>60 and marks<=70):
+    print('Grade D')
+else:
+    print('Grade E')
+    
+   
+print('Done') 
+
+'''
+a=[2,3,4,5,6,7]
+num=int(input('Enter number'))#1
+if num in a:
+    print('Number is present')
+else:
+    print('Number is not present')
+
+print('Done') 
+
+    
+'''
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
