@@ -1,0 +1,89 @@
+
+# loops --->
+
+colours=['red','blue','orange','white','black','pink']
+marks=[12,65,76,92]
+'''
+print(colours[0])
+print(colours[1])
+print(colours[2])
+print(colours[3])
+print(colours[4])
+'''
+
+
+# for loop-->
+
+for i in colours:
+    print(i)
+print('Done')    
+
+
+
+
+
+marks=[12,65,76,92,98]
+
+for i in marks:
+    print('Marks is',i)    
+print('Done')
+
+
+marks=[12,65,76,92,98,-2]
+
+sum=0 # 341
+for i in marks:
+#.   341  
+    sum=sum+i
+    #sum+=i
+    
+print(sum)
+
+
+print('-----------')
+marks=[12,65,76,92,98]
+
+for e in marks:
+    print(e+10)
+    
+print(marks)   
+
+
+print('-----------')
+
+number=[1,2,3,4,5,6,7,8]
+even=[]#2 4 6 8
+odd=[]#1 3 5 7
+
+for a in number:
+    if(a%2==0):
+        even.append(a)
+    else:
+        odd.append(a)
+        
+    
+print(number,even,odd)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
