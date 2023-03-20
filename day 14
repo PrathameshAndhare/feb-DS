@@ -1,0 +1,130 @@
+
+'''
+for i in range(10):
+    if(i==4):
+        break
+    print(i)
+    
+for i in range(10):
+    if(i==4):
+        continue
+    print(i)
+
+for i in range(10):
+    if(i==4):
+        pass
+    print(i)
+    
+
+a=0
+num=int(input('Enter a number'))
+for i in range(2,num):
+    if(num%i==0):
+        print('Not prime')
+        a=1
+        break
+
+if(a==0):
+    print('Prime number')
+    
+    
+print('Done')
+
+
+
+a=1
+while(a==1):
+    n=int(input('Enter'))
+    if(n>0):
+        pass
+    else:
+        a=0
+    
+  
+    
+j=1
+while(j<11):
+    print(j)
+    j=j+1
+
+print('Done',j)
+ 
+ 
+a=3 
+for i in range(10):
+    print(a)
+    a+=3
+    
+print('-----------')   
+a=5# 33
+s=0# 10
+while(s<10):
+    print(a)
+    a+=5
+    s+=1
+    
+    
+print('Done')  
+print('-----------')
+j=1#11
+while(j<11):
+    print(5*j)
+    j+=1
+print('Done')  
+
+print('-----------')
+
+
+while True:
+    q=int(input('Enter a number'))
+    if(q%2==0):
+        print('Even')
+    else:
+        print('Odd')
+        break
+    
+print('Done') 
+
+
+
+
+# isdigit().   # '12.3456'
+
+s='123!45'
+if(s.isdigit()):
+    print('Yes')
+    
+else:
+    print('no')
+    
+ ''' 
+ 
+ 
+valid_input=True
+while  valid_input: # 012
+    val=input('Enter a 3 digit number')
+    if(val.isdigit() and len(val)==3 and val[0]!='0'):
+        valid_input=False
+        print('Value is a 3 digit number')
+    else:
+        print('Value is not a 3 digit number')
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+    
+    
+    
+    
+    
