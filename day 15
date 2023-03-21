@@ -1,0 +1,138 @@
+'''
+a=[1,2,3,4,5,6]
+i=0;
+even=0
+odd=0
+while(i<len(a)):
+    if(a[i]%2==0):
+        even=even+1
+        # 
+    else:
+        odd=odd+1
+    i+=1
+        
+        
+print(even,odd)
+'''
+
+
+a=[1,1,1,1,1,1,1]
+print(a)
+
+
+# set does not store duplicate values , unordered , indexing not supported 
+
+a=[1,2,3]
+s={1,1,2,2,3,3}
+s={}
+print(s,type(s))
+'''
+for i in range(20):
+    print(s)
+'''
+
+a={2,3,4,'Sun',True,'Sun'}
+# print(a)
+
+for i in a:
+    print(i)
+
+
+
+a=[1,1,1,1,1,1,1,2,2,2,2,3,3,3]
+x=set(a)
+print(x,type(x))
+q=list(x)
+print(q,type(q))
+
+
+print(len(x))
+
+
+
+# method
+
+# add(para)
+w={'blue','red','green'}
+
+w.add('orange')
+
+print(w)
+
+w.add('orange')
+
+# setA.update(setB)
+# {'green', 'blue', 'orange', 'red'}
+e={1,2,3}
+w.update(e)
+e.update(w)
+print(w,e)
+
+#remove(para)
+z={'apple','orange','banana','cherry','pineapple'}
+z.remove('apple')
+#z.remove('Mango')
+print(z)
+
+# discard(para)
+
+z.discard('mango')
+print(z)
+
+# pop()
+z.pop()
+print(z)
+
+
+# union ()
+
+
+a={1,2,3,4,6,8}
+b={1,3,5,0,6}
+
+print(a.union(b))
+
+# intersection()
+
+print(a.intersection(b))
+
+# difference()
+
+print(a.difference(b))
+print(b.difference(a))
+
+
+# symmetric_difference()
+
+a={1,2,3}#(2,3,4,5)
+b={1,4,5}
+print(a.symmetric_difference(b))
+print(b.symmetric_difference(a))
+
+# issubset()
+
+a={1,2,3,4,5}
+b={1,5,4,6}
+print(b.issubset(a))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
