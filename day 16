@@ -1,0 +1,123 @@
+# set 
+
+a={1,2,3,4,4,4}
+
+print(a,len(a),type(a))
+
+for i in a:
+    print(i)
+    
+# 1. add(para)
+# {1, 2, 3, 4}
+
+a.add(8)
+print(a)
+
+# 2.update(para)
+
+a={1,2,3}
+b={1,4,5}
+b.update(a)
+print(a,b)
+
+# 3. remove(para)
+a={1,0,2,3,4,5}
+
+a.remove(1)
+print(a)
+
+#  4 discard(para)
+a.discard(31)
+print(a)
+
+print('---------')
+#  5 pop()
+a={1,9,2,3,4,5}
+print(a)
+print('*******')
+print(a.pop())
+print(a)
+
+# 6 union (para)
+
+a={1,2,3}
+b={1,4,5}
+
+print(a.union(b))
+
+# 7 intersection(para)
+
+print(a.intersection(b))
+
+# 8 difference(para)
+
+print(b.difference(a))
+
+#  9 symmetric_difference(para)
+
+print(a.symmetric_difference(b))
+
+# 10 . issubset(para)
+
+a={1,2,3,4,5}
+b={1,4,5}
+print(b.issubset(a))
+
+
+# a=['om',23,12,3]
+
+# dictionary --->
+
+
+
+d={
+    'name':'Rohit',
+    'rollNo':12,
+    'id':1,
+    'age':13,
+    'colour':'red'
+}
+
+print(d['name'])
+print(d['age'])
+
+colour='red'
+d['color']='Blue'
+
+print(d)
+
+del d['name']
+
+print(d)
+
+for i in d:
+    print(i,d[i])
+
+
+car={
+    'model':123,
+    'color':'White',
+    'ac':True
+}
+
+print(car)
+for i in car:
+    print(i,car[i])
+
+car['wheels']=4
+print(car)
+
+del car['wheels']
+print(car)
+
+car['color']='grey'
+print(car)
+
+
+
+
+
+
+
+
+
