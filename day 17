@@ -1,0 +1,143 @@
+# dictionary 
+# a=[1,2,3]
+
+color='red'
+d={
+    'name':'Om',
+    'roll':12,
+    'id':1,
+    'color':color
+}
+'''
+print(d['name'])
+print(d['roll'])
+
+for i in d:
+    print(i,d[i])
+
+
+d['city']='Pune'
+print(d)
+
+d['city']='Goa'
+print(d)
+
+del d['name']
+print(d,type(d))
+print('-------')
+q=d
+print(q,d)
+q['id']=2
+print(q,d)
+print(id(q),id(d))
+
+
+
+a=[1,2,3]
+b=[1,2,3]
+print(id(a),id(b))
+a[0]=5
+print(a,b)
+
+# way 2 -->
+# constructor-->
+name='OM'
+dd=dict(a=1,b=2,c=3,name=name)
+print(dd)
+dd['d']=4
+print(dd)
+del dd['a']
+print(dd)
+
+
+
+# way 3 ---> through list 
+# dict(zip([keys],[values]]))
+qq=dict(zip(['a','b','c'],[1,2,3]))
+qq['c']=4
+print(qq)
+
+# way 4 ---> through tuple
+
+z=dict([('a',1),('b',2),('c',3)])
+print(z)
+
+
+d={
+    'name':'Om',
+    'age':23,
+    'skills':['python','Js','c++','data structures']
+}
+
+#ind=d['skills'].index('c++')
+#print(ind)
+
+e=input('Enter the element you want to find ')
+if e in d['skills'] :
+    print('Element found')
+else:
+    print('Not found')
+a=12
+b=a
+print(a,b)
+
+
+d={
+    'name':'Om',
+    'age':23,
+    'skills':['python','Js','c++','data structures']
+}
+z=d.copy()
+
+print(z,d)
+z['name']='Harish'
+print(id(z),id(d))
+print(z,d)
+'''
+# get 
+
+d={
+    'name':'Om',
+    'age':23,
+    'skills':['python','Js','c++','data structures']
+}
+d[12]='value'
+print(d)
+print(d.get('name'))
+
+print(d.get('color'))
+
+# keys()
+
+
+print(d.keys())
+# values()
+print(d.values())
+
+# items()
+print(d.items())
+
+# update({'key':'value'})
+print(d)
+d.update({'name':'Harsh'})
+print(d)
+
+d.update({'color':'red'})
+print(d)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
