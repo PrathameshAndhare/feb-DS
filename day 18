@@ -1,0 +1,87 @@
+d={
+    'apple':1,
+    'banana':2,
+    'orange':3
+}
+print(d['apple'])
+d['cherry']=4
+
+del d['cherry']
+
+
+
+d
+# add({key:value})
+
+print(d)
+d.update({'mango':4})
+print(d)
+
+# keys()
+
+print(d.keys(),type(d))
+
+# values()
+print(d.values(),type(d))
+
+# items()
+
+print(d.items(),type(d))
+
+# get(para)
+
+print(d.get('apple'))
+print(d.get('parrot'))
+
+
+# setdefault()
+
+print(d.setdefault('apple',6))
+
+print(d.setdefault('chikoo',6))
+print(d)
+
+# popitem()
+q=d.popitem()
+print(d,q,type(q))
+
+
+# pop(para)
+print(d.pop('apple'))
+print(d)
+'''
+# clear()
+d.clear()
+print(d)
+del d
+print(d)
+'''
+'----------------------'
+
+a=['apple','banana','mango','orange']
+b=2
+print(dict.fromkeys(a,b))
+
+
+print(d)
+
+
+for i in d.keys():
+    print(i)
+
+for i in d.values():
+    print(i)
+    
+    
+for k,v in d.items():
+    print(k,v) 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
