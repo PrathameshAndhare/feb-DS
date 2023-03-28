@@ -1,0 +1,155 @@
+one=1
+d={
+    'apple':1,
+    'banana':2,
+    'orange':3,
+}
+print('--------')
+print(d)
+print(d['apple'])
+d['apple']=4
+print(d)
+
+del d['banana']
+print(d)
+# update({key:value})
+
+d.update({'apple':5})
+print(d)
+# keys()
+print(d.keys(),type(d))
+
+# values()
+
+print(d.values(),type(d))
+
+# items()
+
+print(d.items(),type(d))
+
+
+d={
+    'apple':1,
+    'banana':2,
+    'orange':3
+}
+
+
+for i in d.keys():
+    print(i,d[i])
+
+for i in d.values():
+    print(i)
+
+l=[]  
+for i in d.items():
+    print(i,type(i)) 
+    l.append(i)
+    
+print(l)
+    
+d={
+    'apple':1,
+    'banana':2,
+    'orange':3
+}
+
+
+# get(para)
+print(d.get('apple'))
+print(d.get('mango'))
+
+
+# setdefault(a,b)
+
+print(d.setdefault('apple',7))
+print(d.setdefault('cherry',7))
+print(d)
+
+
+
+# popitem()
+q=d.popitem()
+print(d,q,type(q))
+
+
+# pop(para)
+print(d.pop('apple'))
+print(d)
+
+
+
+# clear()
+d.clear()
+print(d)
+
+
+#del d
+
+print(d)
+
+
+# fromkeys(a,y)
+a=['apple','banana','mango','orange']
+b=0
+print(dict.fromkeys(a,b))
+
+
+
+
+# list comprehensions
+
+
+a=[1,2,3,4,5]
+
+for i in a:
+    print(i*2)
+
+print([i*2 for i in a])
+
+
+for i in a:
+    if(i%2==0):
+        print(i)
+        
+        
+print([i for i in a if i%2==0])
+
+s=['apple','banana','cherry','mango']
+
+#for i in range(len(s)):
+#    s[i]=s[i].upper()
+
+print(s)
+
+
+print([i.upper() for i in s])
+print(s)
+
+
+
+
+num=['apple','mango','banana']
+ # dict comprehension 
+d={num[i]:i+1 for i in range(len(num))}
+
+print(d)
+
+
+s={1,2,3,3,3,4,4,5,5}
+
+print([i for i in s])
+
+
+
+
+a={
+    'milk':1,
+    'bread':2,
+    'eggs':3
+}
+
+
+a={key:value*80 for(key,value) in a.items()}
+print(a)
+
