@@ -1,0 +1,58 @@
+def f(arr):
+    s=0
+    for i in arr:
+        s=s+i
+        
+    return s
+    
+def z(fun,val):
+    aa=fun(val) # f([1,4,3,0,5]) #13 
+    w=[] # 2 4
+    for i in range(1,aa+1):
+        if(i%2==0):
+            w.append(i)
+            
+    return w
+    
+ans=z(f,[1,4,3,0,5])
+print(ans)
+
+#w=[3,4,5,6]
+#print(f(w))
+
+
+# print([i*i for i in arr ])
+# lambda functions 
+
+q=lambda a,b: a+b
+print(type(q))
+print(q(2,3))
+
+
+s=lambda num:'Even' if num%2==0 else 'Odd'
+print(s(5))
+print(s(52))
+
+
+'''
+is_even_list = [lambda :x for x in range(1,6)]
+#print(is_even_list)
+
+for item in is_even_list:
+    print(item())
+'''
+l=[3,4,2,1]
+print(sorted(l))
+
+
+aa= [[2,3,7,6,4],[10, 4, 16, 64],[3, 60, 9, 12]]
+#=lambda x: (sorted(i) for i in x)
+ans=[]
+q=lambda w:(ans.append((sorted(i)) for i in w))
+q(aa)
+for i in ans:
+    print(i())
+
+
+
+
