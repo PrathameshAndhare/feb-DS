@@ -1,0 +1,122 @@
+#* arguments
+def ad(a=0,b=0):
+    return a+b
+    
+print(ad(1,2))
+
+def add(*args):
+    print(type(args))
+    sum=0
+    for i in args:
+        sum+=i
+        
+    return sum
+    
+print(add(1,2,3))
+print(add(1,2,3,5,2))
+print(add())
+
+
+q=lambda a,b,c:a+b+c
+
+print(type(q))
+print(q(4,1,1))
+print(q(434,-211,32))
+
+w=lambda num:'Even' if num%2==0 else 'Odd'
+print(w(23))
+print(w(24))
+
+
+
+e=lambda i:i*i*i
+print(e(5))
+
+
+r=lambda str:str.upper()[::-1]
+
+print(r('monday'))
+
+t=lambda a,b:a if(a>b) else b
+
+print(t(3,2))
+print(t(3,21))
+
+v=lambda :12
+print(v())
+
+
+# map(). map(function,list)
+
+
+a=[1,2,3,4,5]
+def abc(x):
+    ans=[]
+    for i in x:
+        ans.append(i*2)
+        
+    return ans
+    
+print(abc(a))
+# []# 2 4 6 8 10
+
+print(list(map(lambda x:2*x,a)))
+
+wq=list(map(lambda x:2*x,[4,3,6,43,1]))
+
+print(wq)
+
+check=lambda num:'Even ->'+str(num) if(num%2==0) else 'Odd ->'+str(num)
+arr=[3,5,1,7,6,6,6]
+#arr={3,3,2,4,4,4,1}
+print(set(map(check,arr)))
+
+
+#filter(function,list)
+
+a=[]#2 4
+arr=[1,2,3,4,5]
+
+for i in arr:
+    if(i%2==0):
+        a.append(i)
+        
+print(a)
+
+
+
+def q(z):
+    ad=[]
+    for i in z:
+        if(i%2==0):
+            ad.append(i)
+            
+            
+    return ad
+    
+    
+print(q([3,5,4,1]))
+
+print(list(filter(q,[1,2,3,4,5,6,7,8])))
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
