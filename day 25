@@ -1,0 +1,73 @@
+# raise 
+'''
+x=int(input('Enter a number'))
+
+if(x%2==0):
+    raise Exception('Even number')
+else:
+    print('Odd')
+    
+    
+print('Done')
+
+
+def cal(year):
+    cur=2023
+    if(year>2023):
+        raise Exception('Invalid year')
+        
+    else:
+        return cur-year
+        
+        
+try:
+    print(cal(2600))
+except Exception as e:
+    print(e)
+finally:
+    print('Finally')
+ 
+
+ 
+while True:
+    try:
+        num=int(input('Enter a number'))
+        result =100/num
+        print(result)
+        break
+    except:
+        print('Error occured')
+ 
+'''  
+
+
+# oops
+
+class car:
+    def __init__(self,name,clr,pr):
+        self.name=name
+        self.color=clr
+        self.price=pr
+        
+    def start(self):
+        print('Car is starting', self.name)
+
+
+
+car1=car('BMW','Blue',234)
+print(car1.name,car1.color,car1.price)
+car1.color='Red'
+print(car1.name,car1.color,car1.price)
+car1.start()
+print('--------')
+#print(car1.length)
+car1.length=1234
+print(car1.length)
+def ss():
+    print('Run')
+
+
+car1.run=ss
+car1.run()
+ 
+    
