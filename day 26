@@ -1,0 +1,92 @@
+class car:
+    pass
+
+a=car
+print(a,type(a))
+a.color='Red'
+print(a.color)
+a.color='Blue'
+print(a.color)
+
+a.price=123
+
+def run():
+    return 1
+    
+a.method=run()
+
+print(a.method)
+
+
+b=car
+print(b)
+print(b.color,b.price)
+
+
+
+#--------------
+
+
+class student:
+    def __init__(self,name,roll,id):
+        self.name=name
+        self.roll=roll
+        self.id=id
+        
+    def walk(self):
+        return 'Walking'
+    def display(self):
+        return 'My name is '+ self.name
+        
+        
+p1=student('Om',12,1)
+p2=student('Rohan',44,90)
+
+print(p1.name,p2.name)
+p1.color='Blue'
+p2.color='green'
+print(p1.color,p2.color)
+
+print(p1.walk(),p2.walk(),p1.display(),p2.display())
+        
+
+def show():
+    return 123
+    
+p2.showq=show()
+print(p2.showq)
+
+# inheritence 
+
+
+class A:
+    def __init__(self,name,id):
+        self.name=name
+        self.id=id
+        
+    def a(self):
+        print('Name is '+self.name)
+
+
+class B(A):
+    def __init__(self,roll):
+        super().__init__(self)
+        self.roll=roll
+        
+    def run(self):
+        print('I am running')
+        
+ 
+abc=A('Namit',23)
+print(abc.name)
+abc.a()
+
+
+
+
+
+
+
+
+
+
