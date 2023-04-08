@@ -1,0 +1,38 @@
+class Account:
+    counter=0
+    def __init__(self,opbal=0):
+        Account.counter+=1
+        self.id=Account.counter
+        self.bal=opbal
+    
+    def deposit(self,amount):
+        if(amount>0):
+            self.bal+=amount
+            self.num_transactions+=1
+            
+    def withdraw(self,amount):
+        if(self.bal>=amount ):
+            self.bal-=amount
+            self.num_transactions+=1
+            
+            
+    def show(self):
+        return " Account no: {} and balance :{} ".format(self.id,self.bal)
+   
+p1=Account(300) 
+print(p1.bal,p1.show())
+
+
+p2=Account() 
+print(p2.bal)
+
+
+p1.deposit(250)
+print(p1.bal)
+p1.withdraw(200)
+print('-------')
+print(p1.bal)
+
+print('-------')
+p1.withdraw(100)
+print(p1.bal)
