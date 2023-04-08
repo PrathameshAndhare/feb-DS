@@ -1,0 +1,93 @@
+class Account:
+    counter=0
+    def __init__(self,opbal=0):
+        Account.counter+=1
+        self.id=Account.counter
+        self.bal=opbal
+        self.num_transactions=0
+        self.max_transactions=3
+    
+    def deposit(self,amount):
+        if(amount>0 and self.num_transactions<self.max_transactions):
+            self.bal+=amount
+            self.num_transactions+=1
+            
+    def withdraw(self,amount):
+        if(self.bal>=amount and self.num_transactions<self.max_transactions):
+            self.bal-=amount
+            self.num_transactions+=1
+            
+            
+    def show(self):
+        return " Account no: {} and balance :{} ".format(self.id,self.bal)
+   
+   
+class SavAcc(Account):
+    pass
+
+class CurrAcc(Account):
+    def __init__(self,opbal=0):
+        super().__init__(opbal)
+        self.max_transactions=1
+
+
+
+ca=CurrAcc(500)
+print(ca.id)
+ca.id=90
+print(ca.id)
+'''
+
+
+p1=Account(300) 
+print(p1.bal)
+print(p1.num_transactions,p1.max_transactions)
+
+p2=Account() 
+print(p2.bal)
+print(p2.num_transactions,p2.max_transactions)
+
+
+p1.deposit(250)
+print(p1.bal)
+print(p1.num_transactions,p1.max_transactions)
+p1.withdraw(200)
+print('-------')
+print(p1.bal)
+print(p1.num_transactions,p1.max_transactions)
+
+print('-------')
+p1.withdraw(100)
+print(p1.bal)
+print(p1.num_transactions,p1.max_transactions)
+
+
+p1.deposit(100)
+print(p1.bal)
+print(p1.num_transactions,p1.max_transactions)
+
+
+p2.deposit(1000000)
+print(p2.bal,p2.num_transactions)
+
+
+
+print(ca.id,ca.bal)
+ca.deposit(3000)
+
+print(ca.num_transactions,ca.max_transactions,ca.bal)
+ca.deposit(3000)
+print(ca.num_transactions,ca.max_transactions,ca.bal)
+print('--------')
+sa=SavAcc(1000)
+print(sa.id,sa.bal,sa.num_transactions)
+sa.deposit(1000)
+print(sa.id,sa.bal,sa.num_transactions)
+sa.withdraw(100)
+print(sa.id,sa.bal,sa.num_transactions)
+'''
+
+
+
+
+
