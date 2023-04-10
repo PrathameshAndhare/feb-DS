@@ -1,0 +1,88 @@
+
+# public self.bal
+# protected self._bal
+# private. self.__bal
+
+
+class Account:
+    counter=0
+    def __init__(self,clr,opbal=0):
+        Account.counter+=1
+        self.id=Account.counter
+        self.__bal=opbal
+        self.num_transac=0
+        self.limit=3
+        self._color=clr
+        
+     
+    def display(self):
+        return self.__bal
+        
+    def deposit(self,amount):
+        if(amount>0 and self.num_transac<self.limit):
+            self.__bal+=amount
+            self.num_transac+=1
+            
+    def withdraw(self,amount):
+        if(self.__bal>=amount and self.num_transac<self.limit):
+            self.__bal-=amount
+            self.num_transac+=1
+            
+    def show(self):
+        return "Acc: {} and bal:{} ".format(self.id,self.__bal)
+        
+class savAcc(Account):
+    pass
+
+class currAcc(Account):
+    def __init__(self,op=0):
+        super().__init(self,op)
+        self.limit=1
+        
+sa1=savAcc('blue',100)
+print(sa1.display())
+print(sa1._color)
+
+sa1._color='red'
+print(sa1._color)
+sa1.deposit(300)
+print(sa1.show(),sa1.num_transac)
+sa1.withdraw(30)
+print(sa1.show(),sa1.num_transac)
+
+
+
+# encapsulation
+
+
+class Powerplant:
+    def __init__(self,location,capacity,employees):
+        self.location=location
+        self.capacity=capacity
+        self.employees=employees
+        
+    def show(self):
+        return "location:{} cap is{} and employees : {}".format(self.location,self.capacity,self.employees)
+        
+        
+p1=Powerplant("Nashik","700MW",120)
+
+print(p1.location)
+p1.location="Thane"
+print(p1.location)
+print(p1.show())
+        
+        
+p1.__location='Nagpur'
+print(p1.location,p1.__location)
+
+p1._employees=111
+print(p1.employees,p1._employees)
+
+
+
+    
+            
+            
+            
+        
