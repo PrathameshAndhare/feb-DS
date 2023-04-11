@@ -1,0 +1,107 @@
+'''
+
+a show
+b show
+c show
+
+a:
+show(x)
+show(x,y)
+show(x,y,z)
+
+o=a
+o.show(1)
+
+
+OVERRIDING
+
+class India():
+    def capital(self):
+        print("New Delhi is the capital of India.")
+ 
+    def language(self):
+        print("Hindi is the most widely spoken language of India.")
+ 
+    def type(self):
+        print("India is a developing country.")
+ 
+class USA():
+    def capital(self):
+        print("Washington, D.C. is the capital of USA.")
+ 
+    def language(self):
+        print("English is the primary language of USA.")
+ 
+    def type(self):
+        print("USA is a developed country.")
+ 
+obj_ind = India()
+obj_usa = USA()
+
+print(obj_ind)
+for country in (obj_ind, obj_usa):
+    country.capital()
+    country.language()
+    country.type()
+    
+   
+    
+class Bird:
+  def intro(self):
+    print("There are many types of birds.")
+     
+  def flight(self):
+    print("Most of the birds can fly but some cannot.")
+   
+class sparrow(Bird):
+  def flight(self):
+    print("Sparrows can fly.")
+     
+
+class ostrich(Bird):
+  def flight(self):
+    print("Ostriches cannot fly.")
+    
+    
+b=Bird()
+b.intro()
+b.flight()
+
+s=sparrow()
+s.intro()
+s.flight()
+     
+o=ostrich()
+o.intro()
+o.flight()
+  
+ 
+ 
+ OVERLOADING 
+ '''    
+ 
+def show(x=0,y=0,z=0):
+    print(x+y+z)
+
+show(1)
+show(1,5)
+show(1,5,7) 
+
+def display(*args):
+    sum=0
+    for i in args:
+        sum+=i
+    print(sum)
+
+display(1,2,3,4,6,7,8)
+
+
+
+
+
+
+
+
+
+
+    
