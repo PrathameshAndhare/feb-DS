@@ -1,0 +1,77 @@
+
+#pip3 install numpy
+
+import numpy as np
+
+
+# random()
+import random as rd
+
+
+# rd.random() will return and generate float no. between 0 and 1
+
+print(rd.random())
+
+
+print(rd.uniform(1,10)) # will generate  float no. between given range 
+print(rd.uniform(9,123))
+
+
+print(rd.randint(9,13)) #  will generate  int no. between given range 
+
+l=['a','e','i','o','u']
+
+# choice(list)
+
+q=rd.choice(l) # will pick any random element from l
+print(q)
+
+
+w=rd.choice(l)
+
+# sample(list ,no. of elements)
+t=rd.sample(l,2) # will give 2 unique values from l
+print(t)
+
+a=[1,2,3,4,5]
+for i in a:
+    print(i*i)
+
+q=[i*i for i in a]
+print(q,type(a))
+
+# np.array()
+w=np.array(a)
+print(w,type(w))
+
+print(w*2)
+print(w*3)
+print(w)
+w=w*w
+print(w)
+
+
+# list range
+
+print(list(range(1,20)))
+
+
+# numpy -> arange(start,end,jump) jump can be float value
+
+e=np.arange(-3,30,4)
+e=np.arange(-3,30,.5)
+print(e)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
